@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T20 World Cup 2024</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: rgb(231, 231, 231);
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100vw;
+            height: 70px;
+            background: rgb(231, 231, 231);
+            box-shadow: 2px 3px 10px rgb(69, 69, 69);
+            position: fixed;
+            top: 0px;
+            z-index: 5;
+        }
+
+        header div {
+            margin-left: 20px;
+            font-size: 35px;
+            font-family: cursive;
+            color: rgb(0, 89, 255);
+        }
+
+        header ul {
+            list-style-type: none;
+            display: flex;
+            gap: 15px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-right: 30px;
+        }
+        
+        header a{
+            color: black;
+            text-decoration: none;
+        }
+        header li{
+            position: relative;
+            padding-bottom: 5px;
+        }
+        header li::before{
+            content: "";
+            position: absolute;
+            width: 50%;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            background-color: blue;
+            transition: width 0.1s ease-in-out;
+        }
+        header li:hover::before{
+            width: 100%;
+            transition: width 0.1s ease-in-out;
+        }
+        header li::after{
+            content: "";
+            width: 50%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            background-color: rgb(231, 231, 231);
+            transition: width 0.1s ease-in-out;
+        }
+        header li:hover::after{
+            width: 0;
+            transition: width 0.1s ease-in-out;
+        }
+        .heading {
+            height: 400px;
+            background: radial-gradient(circle, transparent, rgba(255, 255, 255, 0.364));
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 70px;
+        }
+
+        .heading div:nth-child(2) {
+            margin-top: 40px;
+            font-size: 45px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgb(16, 34, 152);
+            text-shadow: 2px 2px 5px rgb(77, 212, 219);
+            z-index: 2;
+            text-align: center;
+        }
+
+        .heading div:nth-child(3) {
+            margin-top: 20px;
+            font-size: 60px;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            color: rgb(11, 8, 173);
+            text-shadow: 2px 2px 5px rgb(62, 207, 209);
+            z-index: 2;
+        }
+
+        .cricket-img {
+            width: 100%;
+            position: absolute;
+            height: 400px;
+            z-index: -5;
+            object-fit: cover;
+        }
+
+        .blank {
+            position: fixed;
+            bottom: 0px;
+            width: 100vw;
+            height: 20px;
+            z-index: 5;
+            background-color: rgb(211, 211, 211);
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        section section{
+            margin: 20px 50px;
+            display: flex;
+            align-items: center;
+        }
+        section div {
+            font-size: 30px;
+            margin: 10px 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(1, 47, 229);
+            min-width: 20vw;
+        }
+
+        section p {
+            font-size: 20px;
+            margin: 10px 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 1px;
+            color: rgb(8, 120, 194);
+        }
+
+        hr {
+            height: 5px;
+            background-color: rgb(131, 131, 131);
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="logo.png" width="60">
+            T20 World Cup 2024
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="./Teams.html">Teams</a></li>
+                <li><a href="./Indian-team.html">Indian Team</a></li>
+                <li><a href="./Awards.html">Awards</a></li>
+                <li><a href="./Records.html">Records</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="heading">
+        <img src="cricket.png" class="cricket-img">
+        <div>The Greatest Show on Turf:</div>
+        <div>ICC Men's T20 World Cup 2024</div>
+    </div>
+    <main>
+        <section>
+            <hr>
+            <section>
+                <div class="overview">Overview🏏</div>
+                <p>
+                    The 2024 ICC Men's T20 World Cup, co-hosted by the vibrant West Indies and the cricketing newcomer,
+                    the United States, etched itself into history as a tournament brimming with excitement, upsets, and
+                    record-breaking feats. Held from June 1st to 29th, 2024, it witnessed the highest ever participation
+                    of 20 teams vying for the coveted T20 crown.
+                </p>
+            </section>
+            <hr>
+            <section>
+
+                <p>
+                    Unquestionably, the biggest story of the tournament was India's triumphant return to the T20 World
+                    Cup summit. Led by the experience of Rohit Sharma and the bowling prowess of Jasprit Bumrah and the
+                    spin duo of Yuzvendra Chahal and Ravindra Jadeja, India displayed unwavering dominance throughout.
+                    They became the first-ever team to achieve the remarkable feat of winning all eight matches in the
+                    tournament, showcasing exceptional consistency and resilience. This victory also marked India's
+                    second T20 World Cup title, putting them on par with England and West Indies for most titles won.
+                </p>
+
+                <div class="expand">India's Dominance and Historic Feat🏆</div>
+            </section>
+            <hr>
+            <section>
+                <div class="winner">Records Tumble and New Stars Emerge✨</div>
+
+                <p>
+                    The tournament became a stage for individual brilliance and record-breaking achievements. Indian
+                    fast
+                    bowler Arshdeep Singh equalled the record for most wickets in a single T20 World Cup with a haul of
+                    17
+                    wickets. The final itself witnessed a high-scoring affair, with India setting a new record for the
+                    highest final score of 176 runs, surpassing the previous record held by Australia.
+                </p>
+            </section>
+            <hr>
+            <section>
+
+                <p>
+                    While India stole the spotlight, other teams and players also made their mark. South Africa, with a
+                    well-balanced squad led by Temba Bavuma, fought their way to the finals but fell short against the
+                    relentless Indian juggernaut. Canada and Uganda, making their World Cup debuts, displayed a fighting
+                    spirit and showcased the growing global reach of the sport. Young talents like Nepal's Sandeep
+                    Lamichhane and Papua New Guinea's Charles Amini left their mark, hinting at a bright future for
+                    cricket.
+                </p>
+
+                <div>
+                    Beyond the Champions- Rising Stars and Memorable Moments🌇
+                </div>
+            </section>
+            <hr>
+            <section>
+                <div>
+                    A Tournament of Firsts🏅
+                </div>
+
+                <p>
+                    The co-hosting by the West Indies and USA marked a significant step for cricket in the United
+                    States.
+                    With packed stadiums and enthusiastic crowds, the tournament showcased the growing popularity of T20
+                    cricket across the globe. The expanded format, with 20 teams participating, provided a platform for
+                    lesser-known cricketing nations to compete on the biggest stage and share the spotlight with
+                    established
+                    cricketing giants.
+                </p>
+            </section>
+            <hr>
+            <section>
+
+                <p>
+                    The 2024 T20 World Cup was a celebration of cricket in all its glory. It provided an unforgettable
+                    spectacle for fans worldwide, fostering new rivalries, unearthing hidden talents, and cementing
+                    India's
+                    position as a powerhouse in the T20 format. As the dust settles on this historic edition, cricket
+                    fans
+                    eagerly await the next chapter in this ever-evolving and captivating sport.
+                </p>
+                
+                <div>
+                    A Legacy Beyond the Finals🔥
+                </div>
+            </section>
+        </section>
+        <div class="blank"></div>
+    </main>
+</body>
+
+</html>
