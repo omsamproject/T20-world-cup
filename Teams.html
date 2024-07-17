@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams of T20 World Cup 2024</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: rgb(231, 231, 231);
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100vw;
+            height: 70px;
+            background: rgb(231, 231, 231);
+            box-shadow: 2px 3px 10px rgb(69, 69, 69);
+            position: fixed;
+            top: 0px;
+            z-index: 5;
+        }
+
+        header div {
+            margin-left: 20px;
+            font-size: 35px;
+            font-family: cursive;
+            color: rgb(0, 89, 255);
+        }
+
+        header ul {
+            list-style-type: none;
+            display: flex;
+            gap: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-right: 30px;
+        }
+
+        header a {
+            color: black;
+            text-decoration: none;
+        }
+
+        header li {
+            position: relative;
+            padding-bottom: 5px;
+        }
+
+        header li::before {
+            content: "";
+            position: absolute;
+            width: 50%;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            background-color: blue;
+            transition: width 0.1s ease-in-out;
+        }
+
+        header li:hover::before {
+            width: 100%;
+            transition: width 0.1s ease-in-out;
+        }
+
+        header li::after {
+            content: "";
+            width: 50%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            background-color: rgb(231, 231, 231);
+            transition: width 0.1s ease-in-out;
+        }
+
+        header li:hover::after {
+            width: 0;
+            transition: width 0.1s ease-in-out;
+        }
+
+        main {
+            margin: 70px 50px 30px 50px;
+        }
+
+        .heading {
+            font-size: 50px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgb(13, 83, 222);
+            text-shadow: 2px 2px 5px rgb(47, 227, 227);
+            padding: 30px;
+            text-align: center;
+        }
+
+        .teams {
+            display: flex;
+            gap: 20px;
+            column-gap: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            padding-top: 15px;
+        }
+
+        .team {
+            width: 300px;
+            height: 400px;
+            border-radius: 20px;
+            margin-left: 20px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 5px 5px 10px rgb(116, 116, 116);
+        }
+
+        .front {
+            width: 300px;
+            height: 420px;
+            border-radius: 20px;
+            background-color: rgb(111, 162, 183);
+            background: linear-gradient(-45deg, rgb(32, 32, 240), rgb(47, 222, 242));
+            box-shadow: 5px 5px 10px rgb(116, 116, 116);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            bottom: 0;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .country {
+            font-size: 55px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px 0px;
+            text-align: center;
+            text-shadow: 2px 2px 5px gray;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .about {
+            padding: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+        }
+
+        .back {
+            background: white;
+            position: absolute;
+            z-index: -1;
+            width: 300px;
+            height: 420px;
+            border-radius: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .team:hover .front {
+            height: 50px;
+            transition: all 0.25s ease-in-out;
+        }
+
+        .team:hover .front .country {
+            font-size: 38px;
+            padding: 3px;
+            transition: all 0.25s ease-in-out;
+        }
+        .png:hover .front{
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="logo.png" width="60">
+            T20 World Cup 2024
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./Teams.html">Teams</a></li>
+                <li><a href="./Indian-team.html">Indian Team</a></li>
+                <li><a href="./Awards.html">Awards</a></li>
+                <li><a href="./About.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p class="heading">20 Teams Of ICC Men's T20 World Cup 2024:</p>
+        <section class="teams">
+            <div class="team India">
+                <div class="front">
+                    <div class="country">India <img alt="requires net for the image to load" src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/4.png?v=7" width="50">
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="about">Led by the experience of Rohit Sharma and Virat Kohli, India's balanced squad dominated the 2024 T20 World Cup. Their exceptional bowling attack, featuring Jasprit Bumrah and spin duo Chahal and Jadeja, stifled opponents, while their batting firepower secured an undefeated run to the championship title.</div>
+                </div>
+            </div>
+            <div class="team Australia">
+                <div class="front">
+                    <div class="country">Australia <img alt="requires net for the image to load"
+                            src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/1.png?v=7"
+                            width="50"></div>
+                </div>
+                <div class="back">
+                    <div class="about">Led by the aggressive Mitchell Marsh, Australia brought a star-studded squad
+                        featuring power hitters like David Warner and Glenn Maxwell. Their explosive batting combined
+                        with a potent pace attack made them strong contenders. Despite a dominant group stage
+                        performance, they couldn't replicate their form in the knockout stages, falling short of
+                        reaching the finals.</div>
+                </div>
+            </div>
+            <div class="team England">
+                <div class="front">
+                    <div class="country">England <img alt="requires net for the image to load"
+                            src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/3.png?v=7"
+                            width="50"></div>
+                </div>
+                <div class="back">
+                    <div class="about">The defending champions, England, entered the World Cup with a formidable batting
+                        order led by the likes of Joe Root and Jos Buttler. Their bowling attack, spearheaded by Jofra
+                        Archer and Adil Rashid, remained a force to be reckoned with. However, their reign as champions
+                        ended in the semifinals against a resurgent Indian side.</div>
+                </div>
+            </div>
+            <div class="team West-Indies">
+                <div class="front">
+                    <div class="country">West Indies <img alt="requires net for the image to load"
+                            src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/9.png?v=7"
+                            width="50"></div>
+                </div>
+                <div class="back">
+                    <div class="about">The passionate home crowd provided a significant boost for the co-hosts, West
+                        Indies. Their batting lineup, featuring explosive players like Chris Gayle and Nicholas Pooran,
+                        often displayed destructive power. However, their bowling attack lacked consistency, resulting
+                        in an early group stage exit, much to the disappointment of their home fans.</div>
+                </div>
+            </div>
+            <div class="team South-Africa">
+                <div class="front">
+                    <div class="country">South Africa <img alt="requires net for the image to load"
+                            src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/7.png?v=7"
+                            width="50"></div>
+                </div>
+                <div class="back">
+                    <div class="about">South Africa displayed unwavering consistency throughout the tournament. Their
+                        batting lineup, anchored by the experienced Quinton de Kock and the explosive Rassie van der
+                        Dussen, provided a solid foundation. Their bowling attack, boasting the likes of Kagiso Rabada
+                        and Anrich Nortje, was equally impressive.</div>
+                </div>
+            </div>
+            <div class="team New-Zealand">
+                <div class="front">
+                    <div class="country">New Zealand <img alt="requires net for the image to load"
+                            src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/5.png?v=7"
+                            width="50"></div>
+                </div>
+                <div class="back">
+                    <div class="about">Renowned for their strategic gameplay and strong bowling unit, New Zealand looked
+                        promising. Led by the ever-reliable Kane Williamson, their batting was composed and calculated.
+                        However, they couldn't translate their potential into deep tournament progress, bowing out after
+                        the Super 8 stage.</div>
+                </div>
+            </div>
+            <div class="team Pakistan">
+                <div class="front">
+                    <div class="country">Pakistan <img alt="requires net for the image to load"
+                            src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/6.png?v=7"
+                            width="50"></div>
+                </div>
+                <div class="back">
+                    <div class="about">Pakistan's campaign was a tale of close encounters. Their group stage clash
+                        against arch-rivals India was a highly anticipated match, but they couldn't secure a win.
+                        Despite flashes of brilliance, they couldn't progress past the Super 8 stage, leaving their fans
+                        yearning for more.</div>
+                </div>
+            </div>
+            <div class="team Sri-Lanka">
+                <div class="front">
+                    <div class="country">Sri Lanka <img alt="requires net for the image to load"
+                            src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/8.png?v=7"
+                            width="50"></div>
+                </div>
+                <div class="back">
+                    <div class="about">A team with a rich cricketing heritage, Sri Lanka aimed for a strong comeback in
+                        the T20 World Cup. Led by the experienced Dinesh Chandimal, their batting displayed moments of
+                        brilliance. However, they couldn't find the consistency needed to advance beyond the Super 8
+                        stage.</div>
+                </div>
+            </div>
+            <div class="team Bangladesh">
+                <div class="front">
+                    <div class="country">Bangladesh <img alt="requires net for the image to load"
+                            src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/2.png?v=7"
+                            width="50"></div>
+                </div>
+                <div class="back">
+                    <div class="about">A consistent performer in ICC events, Bangladesh brought a well-rounded squad
+                        with designs on upsetting the established powers. Their batting, featuring the likes of Shakib
+                        Al Hasan and Liton Das, promised solidity, while their bowling attack aimed to exploit
+                        weaknesses.</div>
+                </div>
+            </div>
+            <div class="team Afghanistan">
+                <div class="front">
+                    <div class="country">Afghanistan <img alt="requires net for the image to load"
+                            src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/1188.png?v=7"
+                            width="50"></div>
+                </div>
+                <div class="back">
+                    <div class="about">Led by the wily spin wizard Rashid Khan, Afghanistan's strength resided in their
+                        world-class bowling attack. Their passionate unit, known for their never-say-die attitude,
+                        craved to cause a major upset during the tournament. Look out for explosive batting cameos from
+                        Mohammad Nabi or Hazratullah Zazai to complement their potent bowling.</div>
+                </div>
+            </div>
+            <div class="team Ireland">
+                <div class="front">
+                    <div class="country">Ireland <img alt="requires net for the image to load"
+                            src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/13.png?v=7"
+                            width="50"></div>
+                </div>
+                <div class="back">
+                    <div class="about">Ireland possessed a wealth of experience in global tournaments. Their batting
+                        lineup, featuring the big-hitting Paul Stirling, promised fireworks. Their bowling attack, with
+                        a mix of pace and spin, aimed to control the flow of runs and pick up crucial wickets.</div>
+                </div>
+            </div>
+            <div class="team Canada">
+                <div class="front">
+                    <div class="country">Canada <img alt="requires net for the image to load"
+                            src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/12.png?v=7"
+                            width="50"></div>
+                </div>
+                <div class="back">
+                    <div class="about">Marking their historic T20 World Cup debut, Canada entered the fray with youthful
+                        exuberance and a hunger to prove themselves. Their enthusiastic squad, brimming with fresh
+                        talent like the big-hitting Navdeep Poonia, was determined to make a mark on the global stage.
+                    </div>
+                </div>
+            </div>
+            <div class="team Scotland">
+                <div class="front">
+                    <div class="country">Scotland <img alt="requires net for the image to load"
+                            src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/16.png?v=7"
+                            width="50"></div>
+                </div>
+                <div class="back">
+                    <div class="about">Scotland, an experienced associate nation, entered the tournament with a
+                        reputation for causing upsets against bigger teams. Their batting, anchored by the veteran Kyle
+                        Coetzer, boasted a blend of experience and explosiveness. Their bowling attack, known for their
+                        accuracy and swing, looked to exploit chinks in the opposition's armor.</div>
+                </div>
+            </div>
+            <div class="team Namibia">
+                <div class="front">
+                    <div class="country">Namibia <img alt="requires net for the image to load"
+                            src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/20.png?v=7"
+                            width="50"></div>
+                </div>
+                <div class="back">
+                    <div class="about">Renowned for their fighting spirit and upsets in previous tournaments, Namibia
+                        entered the fray with a team known for their never-say-die attitude. Their batting, featuring
+                        the explosive David Wiese, could take the attack to any bowling lineup. Their bowling attack,
+                        spearheaded by the pace of Ruben Trumpelmann, aimed to restrict runs and create chaos with their
+                        variations.</div>
+                </div>
+            </div>
+            <div class="team Netherlands">
+                <div class="front">
+                    <div class="country">Netherlands <img alt="requires net for the image to load"
+                            src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/15.png?v=7"
+                            width="50"></div>
+                </div>
+                <div class="back">
+                    <div class="about">The Netherlands, another team known for causing upsets, looked to repeat their
+                        heroics. Their batting boasted experienced players like Stephan Myburgh, capable of anchoring
+                        the innings or going big. Their bowling attack, with a mix of pace and spin led by the veteran
+                        Pieter Seelaar, aimed to be economical and exploit weaknesses in the opposition.</div>
+                </div>
+            </div>
+            <div class="team Uganda">
+                <div class="front">
+                    <div class="country">Uganda <img alt="requires net for the image to load"
+                            src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/29.png?v=7"
+                            width="50"></div>
+                </div>
+                <div class="back">
+                    <div class="about">Uganda also made their World Cup debut, eager to showcase their cricketing
+                        prowess. Their batting relied on the power-hitting of Ronak Patel, while their bowling,
+                        spearheaded by the wily Frank Nsubuga, aimed to restrict runs and create breakthroughs.</div>
+                </div>
+            </div>
+            <div class="team Nepal">
+                <div class="front">
+                    <div class="country">Nepal <img alt="requires net for the image to load"
+                            src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/637.png?v=7"
+                            width="50"></div>
+                </div>
+                <div class="back">
+                    <div class="about">Debuting in the World Cup, Nepal represented the next generation of cricketing
+                        talent from the Himalayas. Led by the experienced Gyanendra Malla, their batting focused on
+                        calculated strokes and smart running between the wickets. Their bowling attack, featuring the
+                        young spinner Sandeep Lamichhane, aimed to surprise with their variations.</div>
+                </div>
+            </div>
+            <div class="team USA">
+                <div class="front">
+                    <div class="country">USA <img alt="requires net for the image to load"
+                            src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/22.png?v=7"
+                            width="50"></div>
+                </div>
+                <div class="back">
+                    <div class="about">The USA also made their T20 World Cup debut, bringing a wave of enthusiasm. Their
+                        uncapped players, like the promising young pace bowler Sushant Singh, aimed to learn from the
+                        experience while showcasing their skills against established teams.</div>
+                </div>
+            </div>
+            <div class="team Oman">
+                <div class="front">
+                    <div class="country">Oman <img alt="requires net for the image to load"
+                            src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/28.png?v=7"
+                            width="50"></div>
+                </div>
+                <div class="back">
+                    <div class="about">Oman, a participant in the qualifiers, brought a touch of the unexpected to the
+                        tournament. Their batting, featuring the swashbuckling Aaqib Ilyas, could take the attack to any
+                        bowling lineup. Their bowling attack, with a strong spin contingent led by Khawar Ali, aimed to
+                        deceive batsmen and control the run rate.</div>
+                </div>
+            </div>
+            <div class="team png">
+                <div class="front">
+                    <div class="country">Papua New Guinea <img alt="requires net for the image to load"
+                    src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/750.png?v=7"
+                    width="50"></div>       
+                </div>
+                <div class="back">
+                    <div class="about">Ireland possessed a wealth of experience in global tournaments. Their batting
+                        lineup, featuring the big-hitting Paul Stirling, promised fireworks. Their bowling attack, with
+                        a mix of pace and spin, aimed to control the flow of runs and pick up crucial wickets.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

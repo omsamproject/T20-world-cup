@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: rgb(231, 231, 231);
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100vw;
+            height: 70px;
+            background: rgb(231, 231, 231);
+            box-shadow: 2px 3px 10px rgb(69, 69, 69);
+            position: fixed;
+            top: 0px;
+            z-index: 5;
+        }
+
+        header div {
+            margin-left: 20px;
+            font-size: 35px;
+            font-family: cursive;
+            color: rgb(0, 89, 255);
+        }
+
+        header ul {
+            list-style-type: none;
+            display: flex;
+            gap: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-right: 30px;
+        }
+
+        header a {
+            color: black;
+            text-decoration: none;
+        }
+
+        header li {
+            position: relative;
+            padding-bottom: 5px;
+        }
+
+        header li::before {
+            content: "";
+            position: absolute;
+            width: 50%;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            background-color: blue;
+            transition: width 0.1s ease-in-out;
+        }
+
+        header li:hover::before {
+            width: 100%;
+            transition: width 0.1s ease-in-out;
+        }
+
+        header li::after {
+            content: "";
+            width: 50%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            background-color: rgb(231, 231, 231);
+            transition: width 0.1s ease-in-out;
+        }
+
+        header li:hover::after {
+            width: 0;
+            transition: width 0.1s ease-in-out;
+        }
+
+        main {
+            margin: 70px 50px 30px 50px;
+        }
+
+        .heading {
+            font-size: 45px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgb(13, 83, 222);
+            text-shadow: 2px 2px 5px rgb(47, 227, 227);
+            padding: 30px;
+            text-align: center;
+        }
+
+        .awards {
+            display: flex;
+            gap: 20px;
+            column-gap: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            padding-top: 15px;
+        }
+
+        .award {
+            min-width: 450px;
+            width: 450px;
+            min-height: 250px;
+            height: 250px;
+            background: linear-gradient(-45deg, rgb(84, 84, 191), rgb(127, 227, 194));
+            border-radius: 10px;
+            box-shadow: 2px 2px 15px rgb(87, 87, 87);
+            position: relative;
+            overflow: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .trophy{
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            z-index: 2;
+        }
+
+        .trophy img{
+            width: 100px;
+            position: absolute;
+            right: 5px;
+            top: 10px;
+            z-index: 2;
+        }
+
+        .trophy::before {
+            content: "";
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, rgb(93, 93, 209),white);
+            position: absolute;
+            top: -150px;
+            right: -150px;
+            z-index: -1;
+            box-shadow: -2px 2px 5px rgb(38, 38, 38);
+        }
+
+        .award:hover .trophy::before{
+            background: linear-gradient(45deg, rgb(24, 24, 142),white);
+            position: absolute;
+            transition: all 0.25s ease-in-out;
+        }
+
+        .award-name{
+            width: 270px;
+            font-size: 45px;
+            margin: 10px;
+            color: rgb(90, 113, 147);
+        }
+        .cricketer-name{
+            width: 430px;
+            height: 50px;
+            font-size: 45px;
+            color: rgb(234, 254, 255);
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+            overflow: hidden;
+        }
+        .cricketer-name img{
+            width: 50px;
+        }
+        .awards .award:nth-child(4) .cricketer-name{
+            height: 100px;
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="logo.png" width="60">
+            T20 World Cup 2024
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./Teams.html">Teams</a></li>
+                <li><a href="./Indian-team.html">Indian Team</a></li>
+                <li><a href="./Awards.html">Awards</a></li>
+                <li><a href="./About.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p class="heading">
+            T20 World Cup 2024 Awards:
+        </p>
+        <section class="awards">
+            <div class="award">
+                <div class="trophy"><img src="icons/trophy.png" alt=""></div>
+                <p class="award-name">Player of the Tournament:</p>
+                <p class="cricketer-name">
+                    Jasprit Bumrah
+                    <img alt="requires net" src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/4.png?v=7" alt="">
+                </p>
+            </div>
+            <div class="award">
+                <div class="trophy"><img src="icons/trophy.png" alt=""></div>
+                <p class="award-name">Player of the Match (Final):</p>
+                <p class="cricketer-name">
+                    Virat Kohli
+                    <img alt="requires net" src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/4.png?v=7" alt="">
+                </p>
+            </div>
+            <div class="award">
+                <div class="trophy"><img src="icons/trophy.png" alt=""></div>
+                <p class="award-name">Smart Catch of the Match (Final):</p>
+                <p class="cricketer-name">
+                    Suryakumar Yadav
+                    <img alt="requires net" src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/4.png?v=7" alt="">
+                </p>
+            </div>
+            <div class="award">
+                <div class="trophy"><img src="icons/trophy.png" alt=""></div>
+                <p class="award-name">Most Runs:</p>
+                <p class="cricketer-name">
+                    Rahmanullah Gurbaz
+                    <img alt="requires net" src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/1188.png?v=7" alt="">
+                </p>
+            </div>
+            <div class="award">
+                <div class="trophy"><img src="icons/trophy.png" alt=""></div>
+                <p class="award-name">Most Wickets:</p>
+                <p class="cricketer-name">
+                    Arshdeep Singh
+                    <img alt="requires net" src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/4.png?v=7" alt="">
+                </p>
+            </div>
+            <div class="award">
+                <div class="trophy"><img src="icons/trophy.png" alt=""></div>
+                <p class="award-name">Highest Score:</p>
+                <p class="cricketer-name">
+                    Nicholas Pooran
+                    <img alt="requires net" src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/9.png?v=7" alt="">
+                </p>
+            </div>
+            <div class="award">
+                <div class="trophy"><img src="icons/trophy.png" alt=""></div>
+                <p class="award-name">Best Bowling Figures:</p>
+                <p class="cricketer-name">
+                    Fazalhaq Farooqi
+                    <img alt="requires net" src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/1188.png?v=7" alt="">
+                </p>
+            </div>
+            <div class="award">
+                <div class="trophy"><img src="icons/trophy.png" alt=""></div>
+                <p class="award-name">Highest Strike Rate:</p>
+                <p class="cricketer-name">
+                    Shai Hope
+                    <img alt="requires net" src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/9.png?v=7" alt="">
+                </p>
+            </div>
+            <div class="award">
+                <div class="trophy"><img src="icons/trophy.png" alt=""></div>
+                <p class="award-name">Best Economy Rate:</p>
+                <p class="cricketer-name">
+                    Tim Southee
+                    <img alt="requires net" src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/5.png?v=7" alt="">
+                </p>
+            </div>
+            <div class="award">
+                <div class="trophy"><img src="icons/trophy.png" alt=""></div>
+                <p class="award-name">Most Sixes:</p>
+                <p class="cricketer-name">
+                    Nicholas Pooran
+                    <img alt="requires net" src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/9.png?v=7" alt="">
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
