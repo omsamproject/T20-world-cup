@@ -117,37 +117,28 @@
             object-fit: cover;
         }
 
-        .blank {
-            position: fixed;
-            bottom: 0px;
-            width: 100vw;
-            height: 20px;
-            z-index: 5;
-            background-color: rgb(231, 231, 231);
-        }
-
-        section {
+        main section {
             margin-bottom: 20px;
         }
 
-        section section{
+        main section section{
             margin: 20px 50px;
             display: flex;
             align-items: center;
         }
-        section div {
+        main section div {
             font-size: 30px;
             margin: 10px 25px;
             font-family: Arial, Helvetica, sans-serif;
             color: rgb(1, 47, 229);
             min-width: 20vw;
         }
-        section div img{
+        main section div img{
             position: relative;
             top: 7px;
         }
 
-        section p {
+        main section p {
             font-size: 20px;
             margin: 10px 25px;
             font-family: Arial, Helvetica, sans-serif;
@@ -159,6 +150,28 @@
             height: 5px;
             background-color: rgb(131, 131, 131);
             border: none;
+        }
+        footer{
+            display: flex;
+            background: rgb(68, 68, 68);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            align-items: center;
+            padding-top: 10px;
+        }
+        footer .webpage-name{
+            font-weight: bold;
+            font-size: 50px;
+            margin: 20px;
+            width: 50%;
+        }
+        footer .made-by div{
+            font-weight: bold;
+
+        }
+        footer .made-by section{
+            display: flex;
+            gap: 10px;
         }
     </style>
 </head>
@@ -272,8 +285,25 @@
                 </div>
             </section>
         </section>
-        <div class="blank"></div>
     </main>
+    <footer>
+        <div class="webpage-name">&copy; T20 World Cup 2024</div>
+        <section class="made-by">
+            <div class="name">Mady By Om Gupta</div>
+            <section class="school">
+                <div class="school-name">School Name:</div>
+                <p class="school-name1">OP Jindal School, Raigarh</p>
+            </section>
+            <section class="standard">
+                <div class="class">Class:</div>
+                <p class="class1">9th L</p>
+            </section>
+            <section class="adm">
+                <div class="adm-no">Admission No:</div>
+                <p class="adm-no1">JS15929</p>
+            </section>
+        </section>
+    </footer>
 </body>
 
 </html>
