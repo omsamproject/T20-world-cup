@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-adsense-account" content="ca-pub-5475750572387711">g
     <title>T20 World Cup 2024</title>
     <style>
         * {
@@ -118,37 +117,28 @@
             object-fit: cover;
         }
 
-        .blank {
-            position: fixed;
-            bottom: 0px;
-            width: 100vw;
-            height: 20px;
-            z-index: 5;
-            background-color: rgb(211, 211, 211);
-        }
-
-        section {
+        main section {
             margin-bottom: 20px;
         }
 
-        section section{
+        main section section{
             margin: 20px 50px;
             display: flex;
             align-items: center;
         }
-        section div {
+        main section div {
             font-size: 30px;
             margin: 10px 25px;
             font-family: Arial, Helvetica, sans-serif;
             color: rgb(1, 47, 229);
             min-width: 20vw;
         }
-        section div img{
+        main section div img{
             position: relative;
             top: 7px;
         }
 
-        section p {
+        main section p {
             font-size: 20px;
             margin: 10px 25px;
             font-family: Arial, Helvetica, sans-serif;
@@ -160,6 +150,28 @@
             height: 5px;
             background-color: rgb(131, 131, 131);
             border: none;
+        }
+        footer{
+            display: flex;
+            background: rgb(68, 68, 68);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            align-items: center;
+            padding-top: 10px;
+        }
+        footer .webpage-name{
+            font-weight: bold;
+            font-size: 50px;
+            margin: 20px;
+            width: 50%;
+        }
+        footer .made-by div{
+            font-weight: bold;
+
+        }
+        footer .made-by section{
+            display: flex;
+            gap: 10px;
         }
     </style>
 </head>
@@ -189,7 +201,7 @@
         <section>
             <hr>
             <section>
-                <div class="overview">Overview <img src="icons/bat.png" width="40"></div>
+                <div class="overview">Overview <img src="./icons/bat.png" width="40"></div>
                 <p>
                     The 2024 ICC Men's T20 World Cup, co-hosted by the vibrant West Indies and the cricketing newcomer,
                     the United States, etched itself into history as a tournament brimming with excitement, upsets, and
@@ -209,11 +221,11 @@
                     second T20 World Cup title, putting them on par with England and West Indies for most titles won.
                 </p>
 
-                <div class="expand">India's Dominance and Historic Feat<img src="icons/trophy.png" width="40"></div>
+                <div class="expand">India's Dominance and Historic Feat<img src="./icons/trophy.png" width="40"></div>
             </section>
             <hr>
             <section>
-                <div class="winner">Records Tumble and New Stars Emerge <img src="icons/stars.png" width="40"></div>
+                <div class="winner">Records Tumble and New Stars Emerge <img src="./icons/stars.png" width="40"></div>
 
                 <p>
                     The tournament became a stage for individual brilliance and record-breaking achievements. Indian
@@ -237,13 +249,13 @@
                 </p>
 
                 <div>
-                    Beyond the Champions- Rising Stars and Memorable Moments <img src="icons/sunrise.png" width="40">
+                    Beyond the Champions- Rising Stars and Memorable Moments <img src="./icons/sunrise.png" width="40">
                 </div>
             </section>
             <hr>
             <section>
                 <div>
-                    A Tournament of Firsts <img src="icons/medal.png" width="40">
+                    A Tournament of Firsts <img src="./icons/medal.png" width="40">
                 </div>
 
                 <p>
@@ -269,12 +281,29 @@
                 </p>
                 
                 <div>
-                    A Legacy Beyond the Finals <img src="icons/fire.png" width="40">
+                    A Legacy Beyond the Finals <img src="./icons/fire.png" width="40">
                 </div>
             </section>
         </section>
-        <div class="blank"></div>
     </main>
+    <footer>
+        <div class="webpage-name">&copy; T20 World Cup 2024</div>
+        <section class="made-by">
+            <div class="name">Mady By Om Gupta</div>
+            <section class="school">
+                <div class="school-name">School Name:</div>
+                <p class="school-name1">OP Jindal School, Raigarh</p>
+            </section>
+            <section class="standard">
+                <div class="class">Class:</div>
+                <p class="class1">9th L</p>
+            </section>
+            <section class="adm">
+                <div class="adm-no">Admission No:</div>
+                <p class="adm-no1">JS15929</p>
+            </section>
+        </section>
+    </footer>
 </body>
 
 </html>

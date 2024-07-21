@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Awards Given To Players</title>
     <style>
         * {
             margin: 0;
@@ -122,14 +122,14 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        .trophy{
+        .trophy {
             position: absolute;
             right: 20px;
             top: 20px;
             z-index: 2;
         }
 
-        .trophy img{
+        .trophy img {
             width: 100px;
             position: absolute;
             right: 5px;
@@ -142,7 +142,7 @@
             width: 300px;
             height: 300px;
             border-radius: 50%;
-            background: linear-gradient(45deg, rgb(93, 93, 209),white);
+            background: linear-gradient(45deg, rgb(93, 93, 209), white);
             position: absolute;
             top: -150px;
             right: -150px;
@@ -150,19 +150,20 @@
             box-shadow: -2px 2px 5px rgb(38, 38, 38);
         }
 
-        .award:hover .trophy::before{
-            background: linear-gradient(45deg, rgb(24, 24, 142),white);
+        .award:hover .trophy::before {
+            background: linear-gradient(45deg, rgb(24, 24, 142), white);
             position: absolute;
             transition: all 0.25s ease-in-out;
         }
 
-        .award-name{
+        .award-name {
             width: 270px;
             font-size: 45px;
             margin: 10px;
             color: rgb(90, 113, 147);
         }
-        .cricketer-name{
+
+        .cricketer-name {
             width: 430px;
             height: 50px;
             font-size: 45px;
@@ -172,12 +173,36 @@
             bottom: 10px;
             overflow: hidden;
         }
-        .cricketer-name img{
+
+        .cricketer-name img {
             width: 50px;
         }
-        .awards .award:nth-child(4) .cricketer-name{
+
+        .awards .award:nth-child(4) .cricketer-name {
             height: 100px;
             width: 400px;
+        }
+        footer{
+            display: flex;
+            background: rgb(68, 68, 68);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            align-items: center;
+            padding-top: 10px;
+        }
+        footer .webpage-name{
+            font-weight: bold;
+            font-size: 50px;
+            margin: 20px;
+            width: 50%;
+        }
+        footer .made-by div{
+            font-weight: bold;
+
+        }
+        footer .made-by section{
+            display: flex;
+            gap: 10px;
         }
     </style>
 </head>
@@ -204,87 +229,115 @@
         </p>
         <section class="awards">
             <div class="award">
-                <div class="trophy"><img src="icons/trophy.png" alt=""></div>
+                <div class="trophy"><img src="./icons/trophy.png" alt=""></div>
                 <p class="award-name">Player of the Tournament:</p>
                 <p class="cricketer-name">
                     Jasprit Bumrah
-                    <img alt="requires net" src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/4.png?v=7" alt="">
+                    <img alt="requires net"
+                        src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/4.png?v=7" alt="">
                 </p>
             </div>
             <div class="award">
-                <div class="trophy"><img src="icons/trophy.png" alt=""></div>
+                <div class="trophy"><img src="./icons/trophy.png" alt=""></div>
                 <p class="award-name">Player of the Match (Final):</p>
                 <p class="cricketer-name">
                     Virat Kohli
-                    <img alt="requires net" src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/4.png?v=7" alt="">
+                    <img alt="requires net"
+                        src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/4.png?v=7" alt="">
                 </p>
             </div>
             <div class="award">
-                <div class="trophy"><img src="icons/trophy.png" alt=""></div>
+                <div class="trophy"><img src="./icons/trophy.png" alt=""></div>
                 <p class="award-name">Smart Catch of the Match (Final):</p>
                 <p class="cricketer-name">
                     Suryakumar Yadav
-                    <img alt="requires net" src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/4.png?v=7" alt="">
+                    <img alt="requires net"
+                        src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/4.png?v=7" alt="">
                 </p>
             </div>
             <div class="award">
-                <div class="trophy"><img src="icons/trophy.png" alt=""></div>
+                <div class="trophy"><img src="./icons/trophy.png" alt=""></div>
                 <p class="award-name">Most Runs:</p>
                 <p class="cricketer-name">
                     Rahmanullah Gurbaz
-                    <img alt="requires net" src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/1188.png?v=7" alt="">
+                    <img alt="requires net"
+                        src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/1188.png?v=7" alt="">
                 </p>
             </div>
             <div class="award">
-                <div class="trophy"><img src="icons/trophy.png" alt=""></div>
+                <div class="trophy"><img src="./icons/trophy.png" alt=""></div>
                 <p class="award-name">Most Wickets:</p>
                 <p class="cricketer-name">
                     Arshdeep Singh
-                    <img alt="requires net" src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/4.png?v=7" alt="">
+                    <img alt="requires net"
+                        src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/4.png?v=7" alt="">
                 </p>
             </div>
             <div class="award">
-                <div class="trophy"><img src="icons/trophy.png" alt=""></div>
+                <div class="trophy"><img src="./icons/trophy.png" alt=""></div>
                 <p class="award-name">Highest Score:</p>
                 <p class="cricketer-name">
                     Nicholas Pooran
-                    <img alt="requires net" src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/9.png?v=7" alt="">
+                    <img alt="requires net"
+                        src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/9.png?v=7" alt="">
                 </p>
             </div>
             <div class="award">
-                <div class="trophy"><img src="icons/trophy.png" alt=""></div>
+                <div class="trophy"><img src="./icons/trophy.png" alt=""></div>
                 <p class="award-name">Best Bowling Figures:</p>
                 <p class="cricketer-name">
                     Fazalhaq Farooqi
-                    <img alt="requires net" src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/1188.png?v=7" alt="">
+                    <img alt="requires net"
+                        src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/1188.png?v=7" alt="">
                 </p>
             </div>
             <div class="award">
-                <div class="trophy"><img src="icons/trophy.png" alt=""></div>
+                <div class="trophy"><img src="./icons/trophy.png" alt=""></div>
                 <p class="award-name">Highest Strike Rate:</p>
                 <p class="cricketer-name">
                     Shai Hope
-                    <img alt="requires net" src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/9.png?v=7" alt="">
+                    <img alt="requires net"
+                        src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/9.png?v=7" alt="">
                 </p>
             </div>
             <div class="award">
-                <div class="trophy"><img src="icons/trophy.png" alt=""></div>
+                <div class="trophy"><img src="./icons/trophy.png" alt=""></div>
                 <p class="award-name">Best Economy Rate:</p>
                 <p class="cricketer-name">
                     Tim Southee
-                    <img alt="requires net" src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/5.png?v=7" alt="">
+                    <img alt="requires net"
+                        src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/5.png?v=7" alt="">
                 </p>
             </div>
             <div class="award">
-                <div class="trophy"><img src="icons/trophy.png" alt=""></div>
+                <div class="trophy"><img src="./icons/trophy.png" alt=""></div>
                 <p class="award-name">Most Sixes:</p>
                 <p class="cricketer-name">
                     Nicholas Pooran
-                    <img alt="requires net" src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/9.png?v=7" alt="">
+                    <img alt="requires net"
+                        src="https://assets-icc.sportz.io/static-assets/buildv3-stg/images/teams/9.png?v=7" alt="">
                 </p>
             </div>
         </section>
     </main>
+    <footer>
+        <div class="webpage-name">&copy; T20 World Cup 2024</div>
+        <section class="made-by">
+            <div class="name">Mady By Om Gupta</div>
+            <section class="school">
+                <div class="school-name">School Name:</div>
+                <p class="school-name1">OP Jindal School, Raigarh</p>
+            </section>
+            <section class="standard">
+                <div class="class">Class:</div>
+                <p class="class1">9th L</p>
+            </section>
+            <section class="adm">
+                <div class="adm-no">Admission No:</div>
+                <p class="adm-no1">JS15929</p>
+            </section>
+        </section>
+    </footer>
 </body>
 
 </html>
